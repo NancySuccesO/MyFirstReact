@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+a{
+  display: block;
+}
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+main{
+  width: 80%;
+  margin: auto;
+}
+header .inner{
+  text-align: center;
+  padding: 1vw;
+}
+header .inner [alt="Profile"]{
+  width: 100%; 
+}
+header .inner [alt="Share"]{
+ position: absolute;
+ top: 4%;
+ right: 8%;
+}
+header .inner .img{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto; 
+  border-radius: 10000px;
+  overflow: hidden;
+}
+header .inner .img .overlay{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.555);
+  /* display: flex;  */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+header .inner .img .overlay.show{
+  display: flex;
+}
+
+header h1{
+     text-align: center;    
+
+}
+.links{
+  padding: 1vw;
+  /* outline: 2px solid black; */
+}
+.links div{
+  background-color: #F94C10;
+  margin-block: 20px;
+  padding: .8vw;
+  text-align: center;
+}
+.links div a{
+ color: black;
+ font-weight: 700;
+ font-size: 20px;
+}
+.socials{
+  gap: 10px;
+}
+.socials a{
+  font-size: 25px; 
+  padding: 5px;
+   background-color: #ccc;
+}
+.socials a:hover{
+  background-color: chartreuse;
+
+}
